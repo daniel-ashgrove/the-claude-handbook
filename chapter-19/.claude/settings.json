@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__shop-policies__list_directory",
+      "mcp__shop-policies__read_text_file"
+    ],
+    "deny": [
+      "mcp__shop-policies__write_file",
+      "mcp__shop-policies__edit_file",
+      "mcp__shop-policies__move_file",
+      "mcp__shop-policies__create_directory"
+    ]
+  }
+}

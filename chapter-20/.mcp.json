@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "shop-orders": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "shop-orders",
+        "shop-orders"
+      ],
+      "env": {}
+    }
+  }
+}

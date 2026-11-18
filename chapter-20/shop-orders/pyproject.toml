@@ -1,0 +1,20 @@
+[project]
+name = "shop-orders"
+version = "1.0.0"
+description = "The shop's order system as an MCP server"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2.3,<3",
+    "pyjwt[crypto]>=2.10,<3",  # checks sign-in tokens (app.py)
+    "uvicorn>=0.31",           # serves app.py over HTTP
+]
+
+[project.scripts]
+shop-orders = "shop_orders.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
