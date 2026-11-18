@@ -12,7 +12,8 @@ URL = os.environ["SHOP_MCP_URL"]  # the address people will enter in Claude
 
 async def main(order_number: str) -> None:
     headers = {"Authorization": f"Bearer {os.environ['SHOP_MCP_TOKEN']}"}
-    async with httpx2.AsyncClient(headers=headers) as http:
+    timeout = httpx2.Timeout(30, read=300)  # the SDK's own defaults
+    async with httpx2.AsyncClient(headers=headers, timeout=timeout) as http:
         transport = streamable_http_client(URL, http_client=http)
         async with Client(transport) as server:
             listing = await server.list_tools()

@@ -6,6 +6,7 @@ Each folder holds the files from one chapter, under the same names the chapter u
 
 | Folder | Chapter | What's in it |
 |---|---|---|
+| `starter-project` | Chapters 11, 12 and 14 | A small Python project with tests and one reported bug, for the Claude Code practices if you don't have a project of your own. Its README shows how to copy it |
 | `chapter-13` | Advanced Claude Code: Subagents, Hooks, and Custom Commands | A skill, a subagent, project settings and two hook scripts, in a `.claude` folder |
 | `chapter-14` | Claude Code in Practice: Real Projects, Git Workflows, Debugging | Project settings and a `.worktreeinclude` file |
 | `chapter-15` | The Claude API: Authentication, Models, and Your First Request | First requests in curl, Python and TypeScript; listing models; a conversation; the first reply drafter; error handling |
@@ -18,7 +19,7 @@ Each folder holds the files from one chapter, under the same names the chapter u
 | `chapter-22` | Safety, Limits, and Responsible Use | Handling a declined reply, with a test |
 | `chapter-23` | Staying Current: How to Keep This Knowledge Up to Date | A check that warns before a model your code uses is retired |
 
-Chapters 1 to 12 work in the Claude app and Claude Code without code of their own, so they have no folder here.
+Chapters 1 to 12 work in the Claude app and Claude Code without code of their own, so they have no chapter folder here. The starter project is for Part III's practices.
 
 Folders whose names start with a dot, such as `.claude`, are hidden by default on macOS and Linux. Use `ls -a` to see them.
 

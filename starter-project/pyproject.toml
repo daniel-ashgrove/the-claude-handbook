@@ -1,0 +1,6 @@
+[project]
+name = "shop-tools"
+version = "0.1.0"
+description = "Order totals and delivery estimates for a small online shop"
+requires-python = ">=3.10"
+dependencies = []
